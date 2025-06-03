@@ -72,19 +72,17 @@ export default function Weather(props) {
         </div>
         </div>  
         
-            <div className="row">
+            <div className="row d-flex">
             <div className="col-7">
             <div className="container-left">
             <WeatherInfo data={weatherData} />
             </div>
             </div>
-             <div className="col-5">
-              <div className="container-right">
-                <div className="row">
+             <div className="col-5 d-flex align-items-stretch">
+              <div className="container-right w-100">
               <div className="WeatherForecast">
                 <WeatherForecast city={weatherData.city} />
                 </div>
-              </div>
               </div>
               </div>
           </div>

@@ -17,7 +17,7 @@
     padding: 14px;
     margin: 5px auto;
     border-radius: 4px;
-    Min-height: 290px;
+    /*Min-height: 290px;*/
     background-color: #252323;
 }
 /*container holding the city, country and date fields*/
@@ -44,7 +44,7 @@
     border-radius: 4px;
     margin-top: 10px;
     margin-right: 10px;
-    Min-height: 365px;
+    /*Min-height: 365px;*/
     background-color: #252323;
     max-width: 295px;
 }
@@ -117,7 +117,10 @@
     line-height: 25px;
 }
 .Comment {
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.7;
 }
 /*formatting for the description in todays temp area*/
 .Weather .text-capitalize {
