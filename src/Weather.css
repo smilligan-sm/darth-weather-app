@@ -1,0 +1,135 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*main container holding all sub containers and background color*/
+.WeatherContainer {
+    color: rgb(135, 135, 135);
+    border: 1px solid black;
+    padding: 16px;
+    margin: 10px auto;
+    border-radius: 4px;
+    background-color: #4d4a4a;
+    min-width: 700px;
+}
+/*container for todays details*/
+.Weather {
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 14px;
+    margin: 5px auto;
+    border-radius: 4px;
+    Min-height: 292px;
+    background-color: #252323;
+}
+/*container holding the city, country and date fields*/
+.Weather-city {
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+    margin: 2px 0px;
+    background-color: #4d4a4a;
+}
+/*container holding the city search function*/
+.WeatherSearch {
+    color: rgb(135, 135, 135);
+    background-color: #252323;
+    padding: 16px;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+/*container holding the weather forecast information*/
+.WeatherForecast {
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 10px;
+    Min-height: 335px;
+    background-color: #252323;
+    max-width: 295px;
+}
+
+/*formats the city name*/
+.Weather-city h1 {
+    font-size: 54px;
+    font-weight: 500;
+    margin: 15px 0 7px 0;
+    line-height: 30px;
+}
+/*formats the current date*/
+.Weather-city .date {
+    font-size: 12px;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 35px;
+}
+/*format search button*/
+.WeatherSearch .btn {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: black;
+    font-weight: 700;
+}
+/*format Search button when user hovers over it*/
+.WeatherSearch .btn:hover {
+    background-color: rgb(230, 114, 204);
+    border: 1px solid #494549;
+    color: white;
+    font-weight: 700;
+}
+
+/* format the main weather icon for todays temperature*/
+.WeatherIcon {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+/*format the current temp value for todays temperature*/
+.WeatherTemperatureCurrent {
+    display: inline-block;
+}
+/*formats todays temperature*/
+.WeatherTemperature .temperature {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 94px;
+    line-height: 64px;
+    position: relative;
+    float:left;
+    text-align: left;
+    top: 20px;
+}
+/*formats the unit next to todays temperature*/
+.WeatherTemperature .Unit {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 64px;
+    position: relative;
+}
+/*formatting of the extra details for todays weather, like humidity and wind speed*/
+.TodaysDetails {
+    font-size: 16px;
+    margin-top: 0px;
+    line-height: 25px;
+}
+/*formatting for the description in todays temp area*/
+.Weather .text-capitalize {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+/*formatting for the temperature unit for todays current temperature*/
+.WeatherTemperature .unit {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    vertical-align: text-top;
+    line-height: 1;
+    top: 4px;
+    margin-left: 0px; 
+}
+
+

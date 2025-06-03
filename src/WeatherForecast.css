@@ -1,0 +1,26 @@
+.WeatherForecast {
+    text-align: center;
+}
+.WeatherForecastResultsRows .row {
+    border-top: #ffffff solid 1px;
+        line-height: 25px;
+}
+.WeatherForecast-data .col {
+    padding: 2px;
+    align-content: center;
+}
+.WeatherForecast-data .col-5 {
+    padding: 2px;
+    align-content: center;
+}
+.WeatherForecast-description {
+    font-size: 10px;
+}
+.WeatherForecast-temperatures {
+    font-size: 10px;
+    text-align: center;
+}
+.WeatherForecast-temperatures-min {
+    opacity: 0.8;
+    margin-right: 4px;
+}
