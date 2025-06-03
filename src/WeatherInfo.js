@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
       <div className="container">
         <div className="Weather-city">
           <div className="row">
-            <h1>{props.data.city}</h1>
+            <h1>{props.data.displayCity || props.data.city}</h1>
             <div className="col-8">
             </div>
             <div className="col-4">
@@ -40,6 +40,7 @@ export default function WeatherInfo(props) {
         <div>Feels Like: <strong>{props.data.feelslike}°c</strong></div>
         <div>Humidity: <strong>{props.data.humidity}%</strong></div>
         <div>Wind: <strong>{props.data.wind} km/h</strong></div>
+        <div className="Comment">High chance that today will soon see the end of the Rebellion!</div>
       </div>
       </div>
       </div>

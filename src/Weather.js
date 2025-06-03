@@ -7,6 +7,8 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [isDefaultCity, setIsDefaultCity] = useState(true); 
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -15,6 +17,7 @@ export default function Weather(props) {
       date: new Date(response.data.time * 1000),
       wind: response.data.wind.speed,
       city: response.data.city,
+      displayCity: isDefaultCity ? "Death Star" : response.data.city,
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
       icon: response.data.condition.icon,
@@ -35,6 +38,7 @@ export default function Weather(props) {
 
   function handleCityChange(event) {
     setCity(event.target.value);
+    setIsDefaultCity(false);
   }
 
   if (weatherData.ready) {
@@ -43,6 +47,8 @@ export default function Weather(props) {
            
         <div className="container">
         <div className="WeatherSearch">
+        <p>Here at the Empire, we want to ensure your safety while you're out there fighting the rebel scum. Please check the weather conditions before heading out and ensure you dress accordingly.</p>
+        <p>- Management</p>
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
