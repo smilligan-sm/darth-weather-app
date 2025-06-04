@@ -24,7 +24,7 @@
 .Weather-city {
     color: rgb(255, 255, 255);
     padding-left: 5px;
-    margin: 2px 0px;
+    margin: 0px 0px;
     background-color: #4d4a4a;
 }
 /*container holding the city search function*/
