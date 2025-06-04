@@ -17,7 +17,7 @@ export default function Weather(props) {
       date: new Date(response.data.time * 1000),
       wind: response.data.wind.speed,
       city: response.data.city,
-      displayCity: isDefaultCity ? "Death Star" : response.data.city,
+      displayCity: isDefaultCity ? "DS-1 Orbital Station" : response.data.city,
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
       icon: response.data.condition.icon,

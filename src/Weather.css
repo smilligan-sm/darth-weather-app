@@ -51,11 +51,20 @@
 
 /*formats the city name*/
 .Weather-city h1 {
-  font-size: clamp(24px, 5vw, 54px); /* scales between 24px and 54px */
+  font-size: 36px;
   font-weight: 600;
   margin: 15px 0 7px 0;
   line-height: 1.1;
-  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.city-header {
+  font-weight: 600;
+  margin: 15px 0 7px 0;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /*formats the current date*/
 .Weather-city .date {
